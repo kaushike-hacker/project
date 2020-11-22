@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cultural.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cultural</title>
+</head>
+
+<body>
+    <!--Nav Section-->
+    <nav>
+        <div class="logo-div" style="padding-left: 4%;">
+            <img src="logo.png" alt="logo" style="margin:1px 1px;" class="logo">
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+            <li><button>Buy Membership</button></li>
+        </ul>
+    </nav>
+    <!--End Nav Section-->
+    <div class="sp1">
+        <div class="sp_a">
+            <img src="ca.jfif" id="img1">
+            <h1 id="events">Upcoming Events</h1>
+        </div>
+        <section class="list" style="height: 319px;">
+            <ul>
+                <li id="l1">Lorem ipsum dolor sit</li>
+                <h2 id="d1" class="hide">Date:12/04/20 </h2>
+                <li id="l2">Lorem ipsum dolor sit</li>
+                <h2 id="d2" class="hide">Date:13/04/20 </h2>
+                <li id="l3">Lorem ipsum dolor sit</li>
+                <h2 id="d3" class="hide">Date:14/04/20 </h2>
+                <li id="l4">Lorem ipsum dolor sit</li>
+                <h2 id="d3" class="hide">Date:15/04/20 </h2>
+
+
+            </ul>
+        </section>
+        <div class="container" style="margin-top:20px;">
+            <section class="items" id="items1" style=" background-color: #b48648; margin-left: 0px; background-size: auto; padding-top:29px; padding-bottom: 50px; border-radius: 307px;height: 370px;">
+                <img src="cultural1.jfif" id="img2" class="items">
+                <h3 id="content1" class="items" style=" border-radius: 84px;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo. 
+                </h3>
+
+            </section>
+            <section class="items2" id="items2a" style="background-color:#E7D045; margin-left: 0px; background-size: auto;padding-top: 37px; padding-bottom:50px;border-radius: 307px;height: 347px;margin-top:77px">
+                
+                <img src="cultural2.jfif" id="img3" class="items2">
+                <h3 id="content2" class="items2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo.
+                </h3>
+
+            </section>
+            <section class="items3" id="items3a" style="background-color:#C49102; margin-left: 0px; background-size: auto; height: auto;padding-top:51px; padding-bottom: 83px; border-radius: 307px;height: 300px;margin-top:67px;">
+                <img src="cultural3.jfif" id="img4" class="items3">
+                <h3 id="content3" class="items3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo.
+                </h3>
+
+            </section>
+            
+
+            
+            
+        </div>
+        <!--footer -->
+        <section
+            style="width: 100%; padding-top: 60px auto 60px; background-color:#333333 ; display: inline-block; min-height: 150px;">
+            <div align="center" style="color: white; margin: 60px auto 60px;">Copyright @ activity-club</div>
+
+        </section>
+
+        <!--End Footer -->
+        <script type="text/javascript">
+            const hamburger = document.querySelector(".hamburger");
+            const navLinks = document.querySelector(".nav-links");
+            const links = document.querySelectorAll(".nav-links li");
+            
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("open");
+                links.forEach(link => {
+                    link.classList.toggle("fade");
+                });
+                
+                
+            });
+        </script>
+        <script type="text/javascript">
+            window.addEventListener("DOMContentLoaded", function (e) {
+                var stage = document.getElementById("stage");
+                var fadeComplete = function (e) { 
+                        stage.appendChild(arr[0]);
+                        
+                     };
+
+                var arr = stage.getElementsByTagName("img");
+                for (var i = 0; i < arr.length; i++) {
+                    arr[i].addEventListener("animationend", fadeComplete, false);
+                }
+
+            }, false);
+
+        </script>
+</body>
+
+</html>
